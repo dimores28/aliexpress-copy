@@ -1,8 +1,8 @@
 <template>
     <MainLayout>
         <div id="IndexPage" class="mt-4 max-w-[1200px] mx-auto px-2">
-            <div class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4">
-                <div v-if="products" v-for="product in products" :key="product">
+            <div v-if="products" class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4">
+                <div v-for="product in products" :key="product">
                     <ProductComponent :product="product"/>
                 </div>
             </div>
@@ -15,8 +15,8 @@ import MainLayout from '~/layouts/MainLayout.vue';
 let products = ref(null);
 
  products = [
-    {id: 1, title: "Title 1", description: "", url:"", price: 9899},
-    {id: 2, title: "Title 2", description: "", url:"", price: 9899},
+    {id: 1, title: "Title 1", description: "", url:"https://picsum.photos/id/212/800/800", price: 9899},
+    {id: 2, title: "Title 2", description: "", url:"https://picsum.photos/id/212/800/800", price: 9899},
     {id: 3, title: "Title 3", description: "", url:"", price: 9899},
     {id: 4, title: "Title 4", description: "", url:"", price: 9899},
     {id: 5, title: "Title 5", description: "", url:"", price: 9899},

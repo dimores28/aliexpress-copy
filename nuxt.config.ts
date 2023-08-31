@@ -15,6 +15,14 @@ export default defineNuxtConfig({
         stripePk: process.env.STRIPE_PK_KEY
       }
   },
+  supabase: {
+    redirectOptions: {
+      login: '/auth',
+      callback: '/',
+      exclude: [],
+    }
+  
+  },
   app: {
       head: {
         script: [

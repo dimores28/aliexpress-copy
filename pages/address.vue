@@ -81,7 +81,7 @@
     import MainLayout from '~/layouts/MainLayout.vue';
     import { useUserStore } from '~/stores/user';
     const userStore = useUserStore();
-    // const user = useSupabaseUser();
+    const user = useSupabaseUser();
 
     let contactName = ref(null);
     let address = ref(null);
@@ -159,9 +159,9 @@
                 }
             })
 
-            isWorking.value = false
+            isWorking.value = false;
 
-            return navigateTo('/checkout')
+            return navigateTo('/checkout');
         }
         
         await useFetch(`/api/prisma/add-address/`, {
@@ -176,8 +176,8 @@
             }
         })
 
-        isWorking.value = false
+        isWorking.value = false;
 
-        return navigateTo('/checkout')
+        return navigateTo('/checkout');
     }
 </script>

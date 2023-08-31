@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
     '@nuxtjs/tailwindcss',
-    // '@nuxtjs/supabase'
+    '@nuxtjs/supabase'
   ],
   runtimeConfig: {
       public: {

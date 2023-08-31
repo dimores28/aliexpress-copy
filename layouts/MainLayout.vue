@@ -119,10 +119,10 @@
                             </button>
                         </div>
 
-                        <div class="absolute bg-white max-w-[700px] h-auto w-full">
-                            <!-- <div 
-                                v-if="items && items.data" 
+                        <div v-if="items && items.data" class="absolute bg-white max-w-[700px] h-auto w-full">
+                            <div 
                                 v-for="item in items.data" 
+                                :key="item.id"
                                 class="p-1"
                             >
                                 <NuxtLink 
@@ -135,7 +135,7 @@
                                     </div>
                                     <div class="truncate">${{ item.price / 100 }}</div>
                                 </NuxtLink>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -203,8 +203,8 @@
     import { useUserStore } from '~/stores/user';
     const userStore = useUserStore();
 
-    // const client = useSupabaseClient();
-    // const user = useSupabaseUser();
+    const client = useSupabaseClient();
+    const user = useSupabaseUser();
 
     let isAccountMenu = ref(false);
     let isCartHover = ref(false);

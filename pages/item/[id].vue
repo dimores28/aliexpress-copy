@@ -126,7 +126,7 @@ const priceComputed = computed(() => {
 })
 
 const images = ref([
-    'https://picsum.photos/id/212/800/800',
+    '',
     'https://picsum.photos/id/212/800/800',
     'https://picsum.photos/id/233/800/800',
     'https://picsum.photos/id/165/800/800',

@@ -1,4 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// https://nuxt.com/docs/api/configuration/nuxt-config 
+//5Y0NThB21GtWxUDd
 export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
